@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+
+header, section, footer {
+  max-width: 965px;
+}
+
+.chunk {
+  padding: 25px;
+}
+
+
+.logo {
+  margin: 50px auto 0;
+  min-width: 100px;
+  max-width: 175px;
+  width: 30%;
+
+
+
+}
+
+h1 {
+}
+
+.photos {
+
+}
+
+
+
+.bike {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  float: left;
+  background-position: center;
+}
+
+.bike1 {
+  background-image: url(../images/bike1.jpg);
+}
+
+.bike2 {
+  background-image: url(../images/bike2.jpeg);
+  background-position: center right;
+}
+
+.bike3 {
+  background-image: url(../images/bike3.jpeg);
+}
+
+
+
+.non-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+    .non-mobile {
+        display: block;
+    }
+    .bike {
+      width: 33.33%;
+    }
+}
